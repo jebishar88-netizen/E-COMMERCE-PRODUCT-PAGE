@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f9f9f9;
+  color: #333;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #222;
+  padding: 15px 30px;
+}
+
+.logo {
+  color: #00c3ff;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar a.active, .navbar a:hover {
+  color: #00c3ff;
+}
+
+#search, #filter {
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.products {
+  padding: 40px;
+  text-align: center;
+}
+
+.product-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.product {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 250px;
+}
+
+.product img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.product h2 {
+  margin: 10px 0;
+  color: #222;
+}
+
+.btn {
+  background: #00c3ff;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background: #009ad9;
+}
+
+.product-detail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.product-detail-card {
+  display: flex;
+  gap: 30px;
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.product-detail-card img {
+  width: 300px;
+  border-radius: 15px;
+}
+
+.contact {
+  text-align: center;
+  padding: 50px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 300px;
+  margin: auto;
+}
+
+.contact input, .contact textarea {
+  padding: 10px;
+  border: 2px solid #00c3ff;
+  border-radius: 8px;
+}
+
+.contact button {
+  border: none;
+  cursor: pointer;
+}

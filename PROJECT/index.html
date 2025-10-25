@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShopEase - Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">🛒 ShopEase</div>
+    <input type="text" id="search" placeholder="Search products..." />
+    <select id="filter">
+      <option value="all">All</option>
+      <option value="electronics">Electronics</option>
+      <option value="fashion">Fashion</option>
+      <option value="accessories">Accessories</option>
+    </select>
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="product.html">Products</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="products">
+    <h1>Featured Products</h1>
+    <div id="product-list" class="product-list">
+
+      <!-- Smartphone -->
+      <div class="product" data-category="electronics" data-name="Smartphone">
+        <img src="https://m.media-amazon.com/images/I/71geVdy6-OS._SL1500_.jpg" alt="Smartphone">
+        <h2>Smartphone</h2>
+        <p>₹25,999</p>
+        <a href="product.html?name=Smartphone" class="btn">View Details</a>
+      </div>
+
+      <!-- Laptop -->
+      <div class="product" data-category="electronics" data-name="Laptop">
+        <img src="https://cdn.pixabay.com/photo/2015/01/21/14/14/apple-606761_1280.jpg" alt="Laptop">
+        <h2>Laptop</h2>
+        <p>₹55,999</p>
+        <a href="product.html?name=Laptop" class="btn">View Details</a>
+      </div>
+
+      <!-- Sneakers -->
+      <div class="product" data-category="fashion" data-name="Sneakers">
+        <img src="pexels-melvin-buezo-1253763-2529148.jpg" alt="Sneakers">
+        <h2>Sneakers</h2>
+        <p>₹2,999</p>
+        <a href="product.html?name=Sneakers" class="btn">View Details</a>
+      </div>
+
+      <!-- Smart Watch -->
+      <div class="product" data-category="accessories" data-name="Smart Watch">
+        <img src="rendering-smart-home-device.jpg" alt="Smart Watch">
+        <h2>Smart Watch</h2>
+        <p>₹4,499</p>
+        <a href="product.html?name=Smart%20Watch" class="btn">View Details</a>
+      </div>
+
+      <!-- Leather Jacket -->
+      <div class="product" data-category="fashion" data-name="Leather Jacket">
+        <img src="jack.png" alt="Leather Jacket">
+        <h2>Leather Jacket</h2>
+        <p>₹6,499</p>
+        <a href="product.html?name=Leather%20Jacket" class="btn">View Details</a>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

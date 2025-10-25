@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShopEase - Product Details</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">🛒 ShopEase</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="product.html" class="active">Products</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="product-detail" class="product-detail"></section>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const productName = params.get("name");
+
+    const products = {
+      Smartphone: {
+        img: "https://m.media-amazon.com/images/I/71geVdy6-OS._SL1500_.jpg",
+        price: "₹25,999",
+        desc: "Latest 5G smartphone with AMOLED display and 128GB storage."
+      },
+      Laptop: {
+        img: "https://m.media-amazon.com/images/I/71vFKBpKakL._SL1500_.jpg",
+        price: "₹55,999",
+        desc: "Powerful laptop with Intel i7 processor and 16GB RAM."
+      },
+      Sneakers: {
+        img: "https://m.media-amazon.com/images/I/61A9dN1Jp7L._SL1500_.jpg",
+        price: "₹2,999",
+        desc: "Comfortable running sneakers with breathable mesh design."
+      },
+      "Smart Watch": {
+        img: "https://m.media-amazon.com/images/I/71a5ka+8IPL._SL1500_.jpg",
+        price: "₹4,499",
+        desc: "Track your fitness and notifications with this smart watch."
+      },
+      "Leather Jacket": {
+        img: "https://m.media-amazon.com/images/I/71s2xvJ9nZL._SL1500_.jpg",
+        price: "₹6,499",
+        desc: "Premium leather jacket with durable zipper and stylish design."
+      }
+    };
+
+    const container = document.getElementById("product-detail");
+    const product = products[productName];
+
+    if (product) {
+      container.innerHTML = `
+        <div class="product-detail-card">
+          <img src="${product.img}" alt="${productName}">
+          <div>
+            <h1>${productName}</h1>
+            <p>${product.desc}</p>
+            <h3>Price: ${product.price}</h3>
+            <a href="index.html" class="btn">Back to Home</a>
+          </div>
+        </div>`;
+    } else {
+      container.innerHTML = "<h2>Product not found!</h2>";
+    }
+  </script>
+</body>
+</html>
